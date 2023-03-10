@@ -65,17 +65,20 @@ function setup() {
 
 
 function draw() {
+
+	background("black");
+	Engine.update(engine);
+	drawSprites();
   
-	ellipse(block1.position.x,block1.position.y,20);
-	rect(block2.position.x,block2.position.y,20);
-	rect(block3.position.x,block3.position.y,20);
+	ellipse(block1.position.x,block1.position.y,100);
+	rect(block2.position.x,block2.position.y,200,50);
+	rect(block3.position.x,block3.position.y,200,50);
 	rect(ground.position.x,ground.position.y,400,20);
 	
-	Engine.update(engine);
+	
 
 
-  background("black");
-  drawSprites();
+ 
   
   
  
